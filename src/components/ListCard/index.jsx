@@ -8,7 +8,7 @@ import {
 
 const ListCard = props => {
     const {
-        
+        deputados
     } = props
 
     const data = [{ nome: 'Servini', partido: 'PT' }, { nome: 'Matheus', partido: 'partido22' }]
@@ -20,7 +20,7 @@ const ListCard = props => {
     return(
         <List>
             {
-                data.map((item) => 
+                deputados.map((item) => 
                     <Card dados={item} />
                 )
             }
