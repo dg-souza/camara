@@ -4,18 +4,31 @@ import { api } from './services/api'
 
 import './app.css'
 
+import {
+  Content,
+  InputForm,
+  Input
+} from './utils/GlobalStyle'
+
+import ListCard from './components/ListCard'
+
 const App = () => {
   useEffect(() => {
-    api.post('/track')
-      .then(res => {
-        console.log(res)
-      })
   }, [])
 
   return(
-    <>
-      
-    </>
+    <Content>
+      <InputForm>
+        <Input />
+
+        <select>
+          <option>Teste</option>
+          <option>Teste2</option>
+        </select>
+      </InputForm>
+
+      <ListCard />
+    </Content>
   )
 }
 
